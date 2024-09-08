@@ -44,22 +44,3 @@ public class RentFianl {
         
     }
 }
-
-//
-//Explanation
-//
-//    Tool class: Manages tool properties and operations like adding, renting, returning, discarding, and calculating profits.
-//    RentalRecord class: Stores details of individual rentals.
-//    ToolRentalSystem class: Reads commands from a file, processes each command, updates the inventory, and computes profit/loss.
-//
-//Complexity Analysis
-//
-//    ADD: O(1) - Adding a tool or updating quantity.
-//    RENT: O(n) - Where n is the number of rentals for the tool being rented.
-//    RETURN: O(n) - Where n is the number of rental records that need to be processed.
-//    RETURN_DAMAGED: O(1) - Simple removal and cost calculation.
-//    DISCARD: O(1) - Simple removal and cost calculation.
-//    CHECK: O(n) - Where n is the number of distinct tools in inventory.
-//    PROFIT: O(n) - Where n is the number of rental records.
-//
-//This code structure ensures that all operations are efficiently managed and that the profit/loss calculation is accurate. Make sure to test the implementation with various input files to validate correctness.
