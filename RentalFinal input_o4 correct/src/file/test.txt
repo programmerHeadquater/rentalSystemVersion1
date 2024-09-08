@@ -1,0 +1,31 @@
+
+test 2-> 
+```````````````````````````````````````````````````````````````````````````````````````````````````````````````
+						tool	qua		price		qua	price	day	profit/loss
+ADD Drill 60 50.00
+						drill 	60 	at 	50
+ADD Saw 40 75.00
+						saw	40 	at 	75
+RENT Drill 30 5.00 7
+						drill	30	at 	50	rent	30 	5.00	7
+RENT Saw 20 7.00 10
+						saw	20	at 	75	rent 	20 	7.00	10
+RETURN_DAMAGED Drill 10 60.00
+						drill	40	at	50	rent	20	5.00	7	profit	100
+DISCARD Saw 5
+						saw	15	at	75					profit 	-275
+ADD Hammer 30 30.00
+						ham	30	at 	30	
+RENT Hammer 10 6.00 5
+						ham	20	at	30	rent	10	6.00	5
+RETURN Hammer 5 5
+						ham	25	at	30					profit	-125
+RETURN_DAMAGED Hammer 5 40.00
+						ham	30	at	30					profit	-75
+DISCARD Drill 5
+						drill	35	at	50					profit 	-325
+CHECK
+						drill	35	at	50
+						ham	30	at	30
+						saw	15	at	75
+PROFIT														profit	-325
